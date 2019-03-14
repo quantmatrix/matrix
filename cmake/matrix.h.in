@@ -1,0 +1,12 @@
+#define matrix_version      @MATRIX_VERSION_NUMBER@
+#define MATRIX_VERSION      "@MATRIX_VERSION@"
+#define MATRIX_VER          "@MATRIX_NAME@/" MATRIX_VERSION
+
+#ifdef MTRX_BUILD
+#define MATRIX_VER_BUILD    MATRIX_VER " (" MTRX_BUILD ")"
+#else
+#define MATRIX_VER_BUILD    MATRIX_VER
+#endif
+
+#define MATRIX_VAR          "MATRIX"
+#define MTRX_OLDPID_EXT            ".oldbin"
