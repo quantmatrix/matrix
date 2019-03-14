@@ -1,0 +1,3 @@
+install(TARGETS ${MATRIX_EXECUTABLE}
+    RUNTIME DESTINATION bin
+    )
