@@ -1,0 +1,25 @@
+language: c
+
+dist: xenial
+
+os:
+  - osx
+  - linux
+
+compiler:
+  - clang
+  - gcc
+
+sudo: false
+
+before_script:
+  - mkdir ./build
+  - cd ./build
+
+script:
+  - cmake .. -DCMAKE_BUILD_TYPE=Debug -DENABLE_GCOV=1
+  - make
+  - make test
+
+after_success:
+  - cd ./CMakeFiles/matrix.dir/src/core && bash <(curl -s https://codecov.io/bash)
