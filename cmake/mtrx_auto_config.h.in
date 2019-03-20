@@ -1,0 +1,39 @@
+#ifndef MTRX_PREFIX
+#define MTRX_PREFIX  "/usr/local/matrix/"
+#endif
+
+#ifndef MTRX_CONF_PREFIX
+#define MTRX_CONF_PREFIX  "conf/"
+#endif
+
+#ifndef MTRX_SBIN_PATH
+#define MTRX_SBIN_PATH  "sbin/matrix"
+#endif
+
+#ifndef MTRX_CONF_PATH
+#define MTRX_CONF_PATH  "conf/matrix.conf"
+#endif
+
+#ifndef MTRX_PID_PATH
+#define MTRX_PID_PATH  "logs/matrix.pid"
+#endif
+
+#ifndef MTRX_LOCK_PATH
+#define MTRX_LOCK_PATH  "logs/matrix.lock"
+#endif
+
+#ifndef MTRX_ERROR_LOG_PATH
+#define MTRX_ERROR_LOG_PATH  "logs/error.log"
+#endif
+
+#ifndef MTRX_INFO_LOG_PATH
+#define MTRX_INFO_LOG_PATH  "logs/info.log"
+#endif
+
+#ifndef MTRX_USER
+#define MTRX_USER  "matrix"
+#endif
+
+#ifndef MTRX_GROUP
+#define MTRX_GROUP  "matrix"
+#endif
